@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/css.css">
+
+  <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/myjs.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+  <style media="screen">
+    .movie-pi{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #ccc;
+      color: black;
+      float: left;
+      opacity: 0.5;
+      font-size: 20px;
+      margin-bottom: 200px;
+      left: 100px;
+    }
+    .center{
+      text-align: center;
+    }
+    .color{
+      color: white;
+    }
+    .color p a{
+      color: #777;
+      text-decoration: none;
+    }
+    .color p:hover a{
+      color: lightblue;
+    }
+    .h4-color{
+      color: lightblue;
+    }
+    /*.yinying:hover{
+      margin-top: -5px;
+      box-shadow: 0 0 10px lightblue;
+    }*/
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="opacity: 0.5">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle btn btn-primary" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="fa fa-bars fa-1x"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-responsive-collapse">
+        <a href="#" class="navbar-brand navbar-collapse collapse">
+          <i class="fa fa-film" aria-hidden="true"></i></a>
+          <ul class="nav navbar-nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#introduce">电影介绍</a></li>
+            <li><a href="#poster">电影海报</a></li>
+            <li><a href="#info">电影优惠</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 欢迎广告 -->
+    <div class="container" style="margin-top:100px;">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators ol">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="./images/1.jpg" alt="...">
+            <!-- <div class="carousel-caption movie-pi">
+              <div>
+                <p>精彩大片不容错过</p>
+              </div>
+            </div> -->
+          </div>
+          <div class="item">
+            <img src="./images/2.jpg" alt="...">
+            <!-- <div class="carousel-caption movie-pi">
+              <div>
+                <p>精彩大片不容错过</p>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="item">
+            <img src="./images/3.jpg" alt="...">
+            <!-- <div class="carousel-caption movie-pi">
+              <div>
+                <p>精彩大片不容错过</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <br id="introduce">
+    <!-- 电影介绍-->
+    <div class="container" id="introduce">
+      <div class="class">
+        <div class="class-head">
+          <h3>电影介绍</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="img-class">
+              <!-- <i class="fa fa-html5 icon" aria-hidden="true"></i> -->
+              <h4>美国队长3</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="img-class">
+              <!-- <i class="fa fa-css3 icon" aria-hidden="true"></i> -->
+              <h4>龙珠Z：复活的弗利萨</h4>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4">
+            <div class="img-class">
+              <!-- <i class="fa fa-jsfiddle icon" aria-hidden="true"></i> -->
+              <h4>我的战争</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-sm-2">
+            <a href="#" class="thumbnail"><img src="images/4.jpg" alt="" /></a>
+          </div>
+          <div class="class-body col-md-2 col-sm-2">
+
+            <span>
+              导演: 安东尼·罗素 / 乔·罗素<br>
+              编剧: 克里斯托弗·马库斯 / 斯蒂芬·麦克菲利 / 杰克·科比 / 乔·西蒙<br>
+              主演: 克里斯·埃文斯 / 小罗伯特·唐尼 / 斯嘉丽·约翰逊 / 塞巴斯蒂安·斯坦 / 安东尼·麦凯 / 更多... <br>
+              类型: 动作 / 科幻 / 冒险<br>
+              制片国家/地区: 美国<br>
+              语言: 英语 / 德语 / 俄语
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <a href="#" class="thumbnail"><img src="images/5.jpg" alt="" /></a>
+          </div>
+          <div class="class-body col-md-2 col-sm-2">
+
+            <span>
+              导演: 山室直儀<br>
+              编剧: 鸟山明<br>
+              主演: 野泽雅子 / 中尾隆圣 / 山寺宏一 / 森田成一 / 堀川亮 / 更多... <br>
+              类型: 动画<br>
+              制片国家/地区: 日本<br>
+              语言: 日语
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <a href="#" class="thumbnail"><img src="images/6.jpg" alt="" /></a>
+          </div>
+          <div class="class-body col-md-2 col-sm-2">
+
+            <span>
+              导演: 彭顺<br>
+              编剧: 刘恒<br>
+              主演: 刘烨 / 王珞丹 / 杨祐宁 / 叶青 / 黄志忠 / 更多... <br>
+              类型: 剧情 / 历史 / 战争<br>
+              制片国家/地区: 中国大陆<br>
+              语言: 汉语普通话 / 英语
+            </span>
+          </div>
+
+        </div>
+        <!-- 剧情介绍 -->
+
+        <div class="class-head">
+          <h3>剧情介绍</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 center">
+            <i class="fa fa-rebel icon h4-color" aria-hidden="true"></i>
+            <h4>美国队长3</h4>
+          </div>
+
+          <div class="col-md-4 col-sm-4 center">
+            <i class="fa fa-rebel icon h4-color" aria-hidden="true"></i>
+            <h4>龙珠Z：复活的弗利萨</h4>
+          </div>
+
+          <div class="col-md-4 col-sm-4 center">
+            <i class="fa fa-rebel icon h4-color" aria-hidden="true"></i>
+            <h4>我的战争</h4>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-4 col-sm-4 ">
+            <a href="#" class="thumbnail"><img src="images/1-1.jpg" alt="" /></a>
+          </div>
+
+          <div class="col-md-4 col-sm-4 ">
+            <a href="#" class="thumbnail"><img src="images/2-1.jpg" alt="" /></a>
+          </div>
+
+          <div class="col-md-4 col-sm-4 ">
+            <a href="#" class="thumbnail"><img src="images/3-1.jpg" alt="" /></a>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="class-body">
+              <p>
+                美国队长史蒂夫·罗杰斯（克里斯·埃文斯 Chris Evans 饰）带领着全新组建的复仇者联盟，继续维护世界和平。
+                然而，一次执行任务时联盟成员不小心造成大量平民伤亡，从而激发政治压力，政府决定通过一套监管系统来管理和领导复仇者联盟。
+                联盟内部因此分裂为两派：一方由史蒂夫· 罗杰斯领导，他主张维护成员自由，在免受政府干扰的情况下保护世界；
+                另一方则追随托尼·斯塔克（小罗伯特·唐尼 Robert Downey Jr. 饰），他令人意外地决定支持政府的监管和责任制体系。
+                神秘莫测的巴基（塞巴斯蒂安·斯坦 Sebastian Stan 饰）似乎成为内战的关键人物……
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="class-body">
+              <p>
+                许多年前，宇宙最大魔王弗利萨（中尾隆圣 配音）接连败在超级赛亚人之手，他的残党欲孽则流浪宇宙之中寻找那美克星人的新定居点，以期将弗利萨再度复活。
+                几经周折，军队代理索尔贝（斋藤志郎 配音）利用地球的龙珠把弗利萨带回人间，而这个刚刚复活不久的魔王很快展开了他的复仇计划。
+                半年之后，浩浩荡荡的弗利萨大军降临地球，悟饭（野泽雅子 配音）、比克大魔王（古川登志夫 配音）、克林、天津饭、武天老师挺身而出，而孙悟空（野泽雅子 配音）和贝吉塔（堀川亮 配音）则正跟随维斯（森田成一 配音）在遥远的宇宙深处接受试炼。
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="class-body">
+              <p>
+                抗美援朝4大战役时期，中国有这样一支英武勇猛的志愿军，他们为了保卫国家毅然决然远赴他乡，在并肩作战的日子里一起经历生死，建立了深厚的革命情感。
+                孙北川（刘烨 饰）是这支队伍的核心首领，他身经百战、个性粗犷但心地善良，在战场上向来无所畏惧，而遇见文工团团长孟三夏（王珞丹 饰）之后，这份勇猛又多了一层责任感。
+                孟三夏是个性格爽朗、嘴硬心软的直肠子，跟粗线条的孙北川缘起于抬杠，在共同经历了战场的生死考验之后，孟三夏内心的柔情被唤醒。
+                与此同时，孙北川的好兄弟、司号员张洛东（杨佑宁 饰）也对孟三夏暗生情愫，孑然一身的命运造就了他单纯、乐观的个性，为了撮合北川与三夏，他甘愿隐藏自己的感情，但在唯一的亲人老爹李顺良牺牲后，张洛东第一次尝到痛苦的滋味。
+                李顺良（黄志忠 饰）是张洛东的养父，也是队伍里的老兵油子，他淡泊世事讲话句句戳中要害，是九连的润滑剂，也是张洛东的精神导师，他的牺牲促成了张洛东人生的重大蜕变。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="container" id="poster">
+    <div class="review">
+      <div class="hreview thumbnail yinying">
+        <img src="./images/images.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-1.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-2.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-3.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-4.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-5.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-6.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-7.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-8.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-9.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-10.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-11.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-12.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-13.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-14.jpg" alt="" />
+      </div>
+      <div class="hreview thumbnail yinying">
+        <img src="./images/poster-15.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+    <!-- 优惠信息 -->
+    <div class="container" id="info">
+      <div class="title text-danger">
+        <h1><span class="glyphicon glyphicon-usd"></span>优惠折扣</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <strong>前端课程</strong>
+            </div>
+            <table class="table table-info table-active table-hover table-bordered">
+              <tr>
+                <th>电影名称</th>
+                <th>原价</th>
+                <th>折扣价</th>
+              </tr>
+              <tr>
+                <td>美国队长3</td>
+                <td><s>$100</s></td>
+                <td class="new-p">$80</td>
+              </tr>
+              <tr>
+                <td>龙珠Z：复活的弗利萨</td>
+                <td><s>$60</s></td>
+                <td class="new-p">$50</td>
+              </tr>
+              <tr>
+                <td>我的战争</td>
+                <td><s>$50</s></td>
+                <td class="new-p">$30</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部联系信息 -->
+    <div class="container-fluid" id="footer" style="background-color:#191e28">
+      <div class="container" style="background-color:#191e28">
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-6 color" style="margin-top:20px">
+            <p><strong>热门频道</strong></p>
+            <p><a href="#">电影资料</a></p>
+            <p><a href="#">票房播报</a></p>
+            <p><a href="#">劲爆看点</a></p>
+            <p><a href="#">电影节</a></p>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 color" style="margin-top:20px">
+            <p><strong>媒体平台</strong></p>
+            <p><a href="#">电影频道</a></p>
+            <p><a href="#">家庭影院</a></p>
+            <p><a href="#">动作电影</a></p>
+            <p><a href="#">高清电影</a></p>
+          </div>
+          <div class="col-md-4 col-sd-4 col-xs-12 color" style="margin-top:20px">
+            <p><strong>产品中心</strong></p>
+            <p><a href="#">手机客户端</a></p>
+            <p><a href="#">iPad客户端</a></p>
+            <p><a href="#">手机电影网</a></p>
+            <p><a href="#">影视导航</a></p>
+            <p class="foot-btn">
+              <button type="button" class="btn btn-primary">更多...</button>
+            </p>
+          </div>
+        </div>
+      </div>
+   </div>
+</body>
+</html>
